@@ -1,8 +1,12 @@
-#include <unistd.h>
+#include <stdio.h>
+/**
+ * main - Print without using puts or printf 
+ *
+ * Return: 1
+ */
 
-int main() {
-    char* message = "\"and that piece of art is useful\"" - Dora Korpar, 2015-10-19\n"";
-    write(STDERR_FILENO, message, 39);
-    return 1;
+int main (void)
+{
+	fprintf(stderr, "and that piece of art is useful\" - \ Dora Korpar, 2015-10-19\n");
+	return (1);
 }
-
