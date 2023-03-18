@@ -25,7 +25,7 @@ int main(void)
 			putchar(' ');
 			putchar(n3 + '0');
 			putchar(n4 + '0');
-			if (i != 99 || j != 99)
+			if (i == 98 && j == 99)
 			{
 				putchar(',');
 				putchar(' ');
