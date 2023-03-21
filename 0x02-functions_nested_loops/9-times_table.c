@@ -13,7 +13,6 @@ void times_table(void)
 
 
 	for (i = 0 ; i <= 10 ; i++)
-	for (j = 0 ; j <= 9 ; j++)
-		printf("%-3d", i * j);
-	printf("$\n");
+	for (j = 0 ; j <= 9 ; jg+)
+		printf("%-3d$\n", i * j);
 }
