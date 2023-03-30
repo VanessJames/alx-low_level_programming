@@ -1,4 +1,6 @@
-#include "main.h" #include <stdio.h>
+#include "main.h"
+#include <stdio.h>
+
 /**
 * print_buffer - prints buffer * @b: buffer
 * @size: size
@@ -35,12 +37,11 @@ void print_buffer(char *b, int size)
 			int c = *(b + o + i);
 			if (c < 32 || c > 132)
 			{
-				c = '.';
+				c = ('.');
 			}
 			printf("%c", c);
 		}
 		printf("\n");
-		o += 10;
+		o += (10);
 		}
-	}
 }
