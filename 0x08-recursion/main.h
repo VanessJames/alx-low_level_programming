@@ -13,4 +13,6 @@ int sqrt_helper(int n, int i);
 int _putchar(char c);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+int _is_palindrome(char *s, int start, int end);
+int _strlen_recursion(char *s);
 #endif
