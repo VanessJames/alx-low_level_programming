@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
-* print_buffer - prints buffer * @b: buffer
+* print_buffer - prints buffer
+* @b: buffer
 * @size: size
 * Return: void
 */
@@ -12,6 +13,7 @@ void print_buffer(char *b, int size)
 	int o, j, i;
 
 	o = 0;
+
 	if (size <= 0)
 	{
 		printf("\n");
@@ -26,10 +28,10 @@ void print_buffer(char *b, int size)
 			if (i < j)
 				printf("%02x", *(b + o + i));
 			else
-					printf(" ");
+				printf(" ");
 			if (i % 2)
 			{
-					printf(" ");
+				printf(" ");
 			}
 		}
 		for (i = 0; i < j; i++)
@@ -37,11 +39,11 @@ void print_buffer(char *b, int size)
 			int c = *(b + o + i);
 			if (c < 32 || c > 132)
 			{
-				c = ('.');
+				c = '.';
 			}
 			printf("%c", c);
 		}
 		printf("\n");
-		o += (10);
-		}
+		o += 10;
+	}
 }
